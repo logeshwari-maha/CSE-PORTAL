@@ -211,7 +211,6 @@
     </footer>
 
     <script>
-        // Function to check if an element is in the viewport
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
             return (
@@ -221,8 +220,6 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
-
-        // Function to add visible class to sections when they come into the viewport
         function handleScroll() {
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
@@ -232,9 +229,8 @@
             });
         }
 
-        // Listen for scroll events
         window.addEventListener('scroll', handleScroll);
-        // Trigger the scroll handler to check initial positions
+    
         handleScroll();
     </script>
 </body>
